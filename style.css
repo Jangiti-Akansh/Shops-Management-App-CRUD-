@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    height: 85%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.splitleft, .splitright {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #e6f7ff;
+}
+
+.splitleft {
+    border-right: 1px solid #ddd;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#shopdatatable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#shopdatatable th, #shopdatatable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#shopdatatable th {
+    background-color: #8026b1;
+    color: white;
+}
+
+#shopdatatable tr:hover {
+    background-color: #d1ecf1;
+    cursor: pointer;
+}
+
+#shopdatalist tr.selected {
+    background-color: #1a9c9c;
+    color: white;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+input {
+    width: calc(100% - 24px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 12px 18px;
+    font-size: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#addshp {
+    background-color: #28a745;
+}
+
+#editshp {
+    background-color: #17a2b8;
+}
+
+#deleteshp {
+    background-color: #d32f2f;
+}
+
+#clearall {
+    background-color: #ff9800;
+}
+
+button:hover {
+    background-color: #555;
+}
