@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Shop Management</title>
+</head>
+<body>
+    <div class="container">
+        <div id="shopdata" class="splitleft">
+            <h2>Shops Collection</h2>
+            <p>Select any shop to view details on the right.</p>
+            <table id="shopdatatable">
+                <thead>
+                    <tr>
+                        <th>Shop Name</th>
+                        <th>Location</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody id="shopdatalist">
+                    <!-- Shops data will be loaded here -->
+                </tbody>
+            </table>
+        </div>
+        <div id="formshop" class="splitright">
+            <h1>Shops Management and Details</h1>
+            <p>Fill in the form to Add, Update, or Delete shops.</p>
+            <form id="shopform">
+                <label for="name">Shop Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name of Shop" required><br>
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Shop Location" required><br>
+                <label for="contact_number">Contact Number:</label>
+                <input type="text" id="contact_number" name="contact_number" placeholder="Contact Number" required><br>
+                <label for="opening_hours">Opening Hours:</label>
+                <input type="text" id="opening_hours" name="opening_hours" placeholder="Opening Hours" required><br>
+                <label for="owner_name">Owner Name:</label>
+                <input type="text" id="owner_name" name="owner_name" placeholder="Owner Name" required><br>
+                <label for="website">Website:</label>
+                <input type="text" id="website" name="website" placeholder="Website URL"><br>
+                <label for="description">Description:</label>
+                <input type="text" id="description" name="description" placeholder="Description" required><br>
+                <label for="rating">Rating:</label>
+                <input type="number" id="rating" name="rating" placeholder="Rating (1-5)" required><br>
+                <div class="button-group">
+                    <button id="addshp" type="button" onclick="addShop()">Add Shop</button>
+                    <button id="editshp" type="button" onclick="editShop()">Edit Shop</button>
+                    <button id="deleteshp" type="button" onclick="deleteShop()">Delete Shop</button>
+                    <button id="clearall" type="button" onclick="clearFields()">Clear Fields</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
